@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable-v24/button_background.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable-v24/edittext_background.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable-v24/fab_facebook_48.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable-v24/fab_google_48.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable-v24/ic_baseline_chevron_left_32.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable-v24/ic_baseline_notifications_24.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/avata_background.xml" value="0.22552083333333334" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_information.xml" value="0.25" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_main_user.xml" value="0.18141592920353983" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_register.xml" value="0.209375" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/app_bar_main_user.xml" value="0.209375" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/content_main_user.xml" value="0.209375" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_help_center.xml" value="0.25" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_my_driver.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_oder.xml" value="0.22" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_wallet.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/layout_header_nav.xml" value="0.1953125" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/menu/menu_user_nav.xml" value="0.209375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

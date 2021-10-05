@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:background="@color/purple_500"
+    android:paddingTop="30dp"
+    android:paddingLeft="20dp"
+    android:gravity="start">
+    <ImageView
+        android:id="@+id/img_avatarUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/txt_nameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Nguyễn Văn Nhật Quang"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+
+
+</LinearLayout>

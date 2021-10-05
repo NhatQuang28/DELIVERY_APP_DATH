@@ -1,0 +1,3 @@
+
+rootProject.name = "DELIVERY_APP_DATH"
+include ':app'

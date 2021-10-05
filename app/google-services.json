@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "841612799281",
+    "project_id": "dath-delivery-app",
+    "storage_bucket": "dath-delivery-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841612799281:android:127045d7ed3df8e6971410",
+        "android_client_info": {
+          "package_name": "com.example.delivery_app_dath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841612799281-858ptcrron216r07ksct6hhprc61u8p1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.delivery_app_dath",
+            "certificate_hash": "737f82f84cb83eb0b734d1b65fffc0b9e212e3c7"
+          }
+        },
+        {
+          "client_id": "841612799281-kbbdffe953v2emgctvmh6umhc7rf9sve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIk3-VkrcxDboiEM9vvuhg59Xsg_C1Poc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841612799281-kbbdffe953v2emgctvmh6umhc7rf9sve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

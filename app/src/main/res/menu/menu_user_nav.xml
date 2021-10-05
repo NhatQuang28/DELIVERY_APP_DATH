@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="@string/menu_home"
+            android:icon="@null"/>
+        <item android:id="@+id/nav_oder"
+            android:title="@string/menu_oder"
+            android:icon="@null"/>
+        <item android:id="@+id/nav_wallet"
+            android:title="@string/menu_wallet"
+            android:icon="@null"/>
+        <item android:id="@+id/nav_mydrivers"
+            android:title="@string/menu_mydrivers"
+            android:icon="@null"/>
+        <item android:id="@+id/nav_helpcenter"
+            android:title="@string/menu_helpcenter"
+            android:icon="@null"/>
+        <item android:id="@+id/nav_settings"
+            android:title="@string/menu_settings"
+            android:icon="@null"/>
+    </group>
+</menu>
