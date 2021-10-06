@@ -10,9 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DELIVERY_APP_DATH">
         <activity
+            android:name=".WalletActivity"
+            android:exported="true"
+            android:parentActivityName=".MainUserActivity"/>
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true"
+            android:parentActivityName=".MainUserActivity"/>
+        <activity
+            android:name=".OrderActivity"
+            android:exported="true"
+            android:parentActivityName=".MainUserActivity"/>
+        <activity
+            android:name=".MyDriverActivity"
+            android:exported="true"
+            android:parentActivityName=".MainUserActivity"/>
+        <activity
+            android:name=".HelpCenterActivity"
+            android:exported="true"
+            android:parentActivityName=".MainUserActivity"/>
+        <activity
             android:name=".InformationActivity"
-            android:parentActivityName=".MainUserActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainUserActivity" />
         <activity
             android:name=".MainUserActivity"
             android:exported="true"
@@ -29,7 +49,7 @@
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

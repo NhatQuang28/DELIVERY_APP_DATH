@@ -10,32 +10,26 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.delivery_app_dath.fragment.HelpCenterFragment;
 import com.example.delivery_app_dath.fragment.HomeFragment;
-import com.example.delivery_app_dath.fragment.MyDriverFragment;
-import com.example.delivery_app_dath.fragment.OderFragment;
-import com.example.delivery_app_dath.fragment.SettingFragment;
-import com.example.delivery_app_dath.fragment.WalletFragment;
+
 import com.google.android.material.navigation.NavigationView;
 
 public class MainUserActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout mDrawerLayout ;
     // phân biệt giữa các fragment
-    private static final int FRAGMENT_HOME = 0;
-    private static final int FRAGMENT_ODER = 1;
-    private static final int FRAGMENT_WALLET = 2;
-    private static final int FRAGMENT_MYDRIVER = 3;
-    private static final int FRAGMENT_HELPCENTER = 4;
-    private static final int FRAGMENT_SETTING = 5;
-
-    private int mCurrentFragment = FRAGMENT_HOME;
+//    private static final int FRAGMENT_HOME = 0;
+//    private static final int FRAGMENT_ODER = 1;
+//    private static final int FRAGMENT_WALLET = 2;
+//    private static final int FRAGMENT_MYDRIVER = 3;
+//    private static final int FRAGMENT_HELPCENTER = 4;
+//    private static final int FRAGMENT_SETTING = 5;
+//    private int mCurrentFragment = FRAGMENT_HOME;
 
     private ImageView img_avatarUser;
     private TextView txt_nameUser;
@@ -48,6 +42,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
         //tool bar của androidx
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         //ánh xạ
         mDrawerLayout = findViewById(R.id.drawer_layout);
@@ -62,10 +57,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
         navigationView.setNavigationItemSelectedListener(this);
 
         replaceFragment(new HomeFragment());
-        navigationView.getMenu().findItem(R.id.nav_home).setCheckable(true);
-
-        View header = navigationView.getHeaderView(0);
-        img_avatarUser = (ImageView) header.findViewById(R.id.img_avatarUser);
+//        navigationView.getMenu().findItem(R.id.nav_home).setCheckable(true);
 
         img_avatarUser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +66,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
                 startActivity(intent);
             }
         });
+
         txt_nameUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,37 +95,23 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Intent intent;
         int id = item.getItemId();
-        if (id == R.id.nav_home){
-            if(mCurrentFragment != FRAGMENT_HOME){
-                replaceFragment(new HomeFragment());
-                mCurrentFragment = FRAGMENT_HOME;
-            }
-        }else if (id == R.id.nav_oder){
-            if(mCurrentFragment != FRAGMENT_ODER){
-                replaceFragment(new OderFragment());
-                mCurrentFragment = FRAGMENT_ODER;
-            }
+        if (id == R.id.nav_oder){
+            intent = new Intent(MainUserActivity.this, OrderActivity.class);
+            startActivity(intent);
         }else if (id == R.id.nav_wallet){
-            if(mCurrentFragment != FRAGMENT_WALLET){
-                replaceFragment(new WalletFragment());
-                mCurrentFragment = FRAGMENT_WALLET;
-            }
+            intent = new Intent(MainUserActivity.this,WalletActivity.class);
+            startActivity(intent);
         }else if (id == R.id.nav_mydrivers){
-            if(mCurrentFragment != FRAGMENT_MYDRIVER){
-                replaceFragment(new MyDriverFragment());
-                mCurrentFragment = FRAGMENT_MYDRIVER;
-            }
+            intent = new Intent(MainUserActivity.this,MyDriverActivity.class);
+            startActivity(intent);
         }else if (id == R.id.nav_helpcenter){
-            if(mCurrentFragment != FRAGMENT_HELPCENTER){
-                replaceFragment(new HelpCenterFragment());
-                mCurrentFragment = FRAGMENT_HELPCENTER;
-            }
+            intent = new Intent(MainUserActivity.this,HelpCenterActivity.class);
+            startActivity(intent);
         }else if (id == R.id.nav_settings){
-            if(mCurrentFragment != FRAGMENT_SETTING){
-                replaceFragment(new SettingFragment());
-                mCurrentFragment = FRAGMENT_SETTING;
-            }
+            intent = new Intent(MainUserActivity.this,SettingActivity.class);
+            startActivity(intent);
         }
         // đóng gravity drawer
         mDrawerLayout.closeDrawer(GravityCompat.START);
