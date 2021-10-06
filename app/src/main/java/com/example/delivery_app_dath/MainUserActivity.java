@@ -51,8 +51,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
 
         //ánh xạ
         mDrawerLayout = findViewById(R.id.drawer_layout);
-//        txt_nameUser = (TextView) findViewById(R.id.txt_nameUser);
-//        img_avatarUser = (ImageView) findViewById(R.id.img_avatarUser);
+        unitIU();
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(MainUserActivity.this,mDrawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         mDrawerLayout.addDrawerListener(toggle);
@@ -68,13 +67,28 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
         View header = navigationView.getHeaderView(0);
         img_avatarUser = (ImageView) header.findViewById(R.id.img_avatarUser);
 
-//        img_avatarUser.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainUserActivity.this,InformationActivity.class);
-//                startActivity(intent);
-//            }
-//        }
+        img_avatarUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainUserActivity.this,InformationActivity.class);
+                startActivity(intent);
+            }
+        });
+        txt_nameUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainUserActivity.this,InformationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    private void unitIU(){
+        NavigationView navigationView = findViewById(R.id.navigation_view);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
+        txt_nameUser = navigationView.getHeaderView(0).findViewById(R.id.txt_nameUser);
+        img_avatarUser =  navigationView.getHeaderView(0).findViewById(R.id.img_avatarUser);
     }
 
 
