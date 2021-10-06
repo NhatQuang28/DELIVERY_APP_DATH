@@ -33,7 +33,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
                 return new OnGoingFragment();
         }
     }
-    // hàm getCoutn trả ra số lượng tab
+    // hàm getCoutn trả về số lượng tab
     @Override
     public int getCount() {
         return 3;

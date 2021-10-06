@@ -43,6 +43,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().
 
         //ánh xạ
         mDrawerLayout = findViewById(R.id.drawer_layout);
