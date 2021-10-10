@@ -33,15 +33,15 @@
         />
 
     <EditText
-        android:id="@+id/edt_phoneNumberLogin"
+        android:id="@+id/edt_emailLogin"
         android:background="@drawable/edittext_background"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="+84"
+        android:hint="Nhập email"
         app:layout_constraintVertical_bias="0.25"
         app:layout_constraintHorizontal_bias="0.5"
-        android:inputType="textPhonetic"
+        android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingTop="20dp"

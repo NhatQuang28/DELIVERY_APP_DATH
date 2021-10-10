@@ -30,17 +30,16 @@
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         />
 
     <EditText
-        android:id="@+id/edt_phoneNumberRegister"
+        android:id="@+id/edt_NameRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_background"
         android:ems="10"
-        android:hint="+84"
-        android:inputType="textPhonetic"
+        android:hint="Họ tên"
+        android:inputType="textPersonName"
         android:paddingLeft="15dp"
         android:paddingTop="20dp"
         android:paddingRight="15dp"
@@ -51,6 +50,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/edt_phoneNumberRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
         app:layout_constraintWidth_percent="0.8" />
 
     <EditText
@@ -70,7 +89,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32"
+        app:layout_constraintVertical_bias="0.44"
         app:layout_constraintWidth_percent="0.8" />
 
     <EditText
@@ -90,7 +109,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintVertical_bias="0.56"
         app:layout_constraintWidth_percent="0.8" />
 
     <EditText
@@ -110,28 +129,26 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56"
+        app:layout_constraintVertical_bias="0.68"
         app:layout_constraintWidth_percent="0.8" />
 
 
     <Button
         android:id="@+id/btn_register"
-        android:background="@drawable/button_background"
-        android:text="Đăng kí"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp"
         android:paddingTop="15dp"
+        android:paddingRight="10dp"
         android:paddingBottom="15dp"
-        app:layout_constraintVertical_bias="0.8"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:text="Đăng kí"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.8"
-        />
+        app:layout_constraintVertical_bias="0.852"
+        app:layout_constraintWidth_percent="0.8" />
 
     <TextView
         android:id="@+id/txt_login"

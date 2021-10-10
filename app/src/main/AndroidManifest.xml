@@ -10,25 +10,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DELIVERY_APP_DATH">
         <activity
+            android:name=".SplastActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".WalletActivity"
             android:exported="true"
-            android:parentActivityName=".MainUserActivity"/>
+            android:parentActivityName=".MainUserActivity" />
         <activity
             android:name=".SettingActivity"
             android:exported="true"
-            android:parentActivityName=".MainUserActivity"/>
+            android:parentActivityName=".MainUserActivity" />
         <activity
             android:name=".OrderActivity"
             android:exported="true"
-            android:parentActivityName=".MainUserActivity"/>
+            android:parentActivityName=".MainUserActivity" />
         <activity
             android:name=".MyDriverActivity"
             android:exported="true"
-            android:parentActivityName=".MainUserActivity"/>
+            android:parentActivityName=".MainUserActivity" />
         <activity
             android:name=".HelpCenterActivity"
             android:exported="true"
-            android:parentActivityName=".MainUserActivity"/>
+            android:parentActivityName=".MainUserActivity" />
         <activity
             android:name=".InformationActivity"
             android:exported="true"
@@ -38,11 +47,6 @@
             android:exported="true"
             android:label="@string/title_activity_main_user"
             android:theme="@style/Theme.DELIVERY_APP_DATH.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".RegisterActivity"
