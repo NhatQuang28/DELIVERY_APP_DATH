@@ -117,8 +117,8 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         if (password.isEmpty()) {
-            edt_emailRegister.setError("Mật Khẩu Trống");
-            edt_emailRegister.requestFocus();
+            edt_passwordRegister.setError("Mật Khẩu Trống");
+            edt_passwordRegister.requestFocus();
             return;
         }
 //        if (passwordVetify.isEmpty()) {

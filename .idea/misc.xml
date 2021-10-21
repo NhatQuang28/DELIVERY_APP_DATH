@@ -11,8 +11,10 @@
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable-v24/ic_baseline_notifications_24.xml" value="0.1" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/avata_background.xml" value="0.22552083333333334" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/ic_box.xml" value="0.11614583333333334" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/shadown_layout.xml" value="0.21614583333333334" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_help_center.xml" value="0.15" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_information.xml" value="0.25" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_list_vehicle.xml" value="0.2" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_main_user.xml" value="0.18141592920353983" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_my_driver.xml" value="0.209375" />
@@ -34,6 +36,7 @@
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_wallet.xml" value="0.1" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/layout_header_nav.xml" value="0.1953125" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/vehicle_item.xml" value="0.2" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/menu/menu_user_nav.xml" value="0.209375" />
       </map>
     </option>
@@ -43,5 +46,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>
