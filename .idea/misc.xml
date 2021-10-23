@@ -10,8 +10,14 @@
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable-v24/ic_baseline_chevron_left_32.xml" value="0.1" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable-v24/ic_baseline_notifications_24.xml" value="0.1" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/avata_background.xml" value="0.22552083333333334" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/background_layout_shadown.xml" value="0.21614583333333334" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/background_layout_shadown_top.xml" value="0.21614583333333334" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/background_textview.xml" value="0.21614583333333334" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/button_background.xml" value="0.10989583333333333" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/ic_box.xml" value="0.11614583333333334" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21614583333333334" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/drawable/shadown_layout.xml" value="0.21614583333333334" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_google_map.xml" value="0.2" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_help_center.xml" value="0.15" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_information.xml" value="0.25" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_list_vehicle.xml" value="0.2" />
@@ -26,6 +32,7 @@
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/activity_wallet.xml" value="0.209375" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/app_bar_main_user.xml" value="0.209375" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/content_main_user.xml" value="0.209375" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_blank.xml" value="0.2" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_cancelled.xml" value="0.1" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_completed.xml" value="0.1" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_help_center.xml" value="0.25" />
@@ -34,6 +41,7 @@
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_oder.xml" value="0.22" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_on_going.xml" value="0.1" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
+        <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_start_order.xml" value="0.33" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/fragment_wallet.xml" value="0.1" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/layout_header_nav.xml" value="0.1953125" />
         <entry key="..\:/ProjectAndroid/DELIVERY_APP_DATH/app/src/main/res/layout/vehicle_item.xml" value="0.2" />

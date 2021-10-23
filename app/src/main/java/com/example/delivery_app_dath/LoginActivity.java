@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         imgv_backLogin = (ImageView) findViewById(R.id.imgv_backLogin);
-        txt_register = (TextView) findViewById(R.id.txt_register);
+        txt_register = (TextView) findViewById(R.id.tv_register);
         edt_passwordLogin= (EditText) findViewById(R.id.edt_passwordLogin);
         edt_emailLogin=(EditText) findViewById(R.id.edt_emailLogin);
         btn_login =(Button) findViewById(R.id.btn_login);

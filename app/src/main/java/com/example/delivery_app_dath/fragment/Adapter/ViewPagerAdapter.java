@@ -1,15 +1,11 @@
 package com.example.delivery_app_dath.fragment.Adapter;
 
-import android.widget.Switch;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.delivery_app_dath.fragment.HomeFragment;
 import com.example.delivery_app_dath.fragment.OrderFragment.CancelledFragment;
 import com.example.delivery_app_dath.fragment.OrderFragment.CompletedFragment;
 import com.example.delivery_app_dath.fragment.OrderFragment.OnGoingFragment;

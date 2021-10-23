@@ -16,7 +16,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.delivery_app_dath.fragment.HomeFragment;
+import com.example.delivery_app_dath.fragment.StartOrderFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -56,7 +56,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
         NavigationView navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        replaceFragment(new HomeFragment());
+        replaceFragment(new StartOrderFragment());
 //        navigationView.getMenu().findItem(R.id.nav_home).setCheckable(true);
 
         img_avatarUser.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +80,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
     private void unitIU(){
         NavigationView navigationView = findViewById(R.id.navigation_view);
         mDrawerLayout = findViewById(R.id.drawer_layout);
-        txt_nameUser = navigationView.getHeaderView(0).findViewById(R.id.txt_nameUser);
+        txt_nameUser = navigationView.getHeaderView(0).findViewById(R.id.tv_nameUser);
         img_avatarUser =  navigationView.getHeaderView(0).findViewById(R.id.img_avatarUser);
     }
 
