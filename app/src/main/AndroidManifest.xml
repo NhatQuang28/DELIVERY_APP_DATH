@@ -14,14 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DELIVERY_APP_DATH">
         <activity
-            android:name=".GoogleMapActivity"
-            android:exported="true" >
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
-        <!-- Key gg api -->
+            android:name=".OrderActivity"
+            android:exported="false"
+            android:parentActivityName=".MainUserActivity" />
+        <activity
+            android:name=".CompleteOrderActivity"
+            android:exported="false"
+            android:parentActivityName=".MainUserActivity"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAEKu1xNNBsTJEu3e9P7d_YHK6w8qqS7QQ" />
@@ -31,18 +30,14 @@
 
         <activity
             android:name=".ListVehicleActivity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SplastActivity"
             android:exported="true">
-
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN" />-->
-<!--             <category android:name="android.intent.category.LAUNCHER" />-->
-<!--             </intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".WalletActivity"
@@ -50,10 +45,6 @@
             android:parentActivityName=".MainUserActivity" />
         <activity
             android:name=".SettingActivity"
-            android:exported="true"
-            android:parentActivityName=".MainUserActivity" />
-        <activity
-            android:name=".OrderActivity"
             android:exported="true"
             android:parentActivityName=".MainUserActivity" />
         <activity
@@ -72,12 +63,7 @@
             android:name=".MainUserActivity"
             android:exported="true"
             android:label="@string/title_activity_main_user"
-            android:theme="@style/Theme.DELIVERY_APP_DATH.NoActionBar">
-                         <intent-filter>
-                         <action android:name="android.intent.action.MAIN" />
-                         <category android:name="android.intent.category.LAUNCHER" />
-                         </intent-filter>
-        </activity>
+            android:theme="@style/Theme.DELIVERY_APP_DATH.NoActionBar" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />

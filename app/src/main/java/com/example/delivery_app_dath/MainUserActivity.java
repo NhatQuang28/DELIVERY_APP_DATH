@@ -16,12 +16,20 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.delivery_app_dath.Modal.User;
 import com.example.delivery_app_dath.fragment.StartOrderFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainUserActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout mDrawerLayout ;
+    private String urlFirebase = " https://dath-delivery-app-default-rtdb.asia-southeast1.firebasedatabase.app";
     // phân biệt giữa các fragment
 //    private static final int FRAGMENT_HOME = 0;
 //    private static final int FRAGMENT_ODER = 1;
@@ -32,7 +40,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
 //    private int mCurrentFragment = FRAGMENT_HOME;
 
     private ImageView img_avatarUser;
-    private TextView txt_nameUser;
+    private TextView tv_nameUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +55,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
         //ánh xạ
         mDrawerLayout = findViewById(R.id.drawer_layout);
         unitIU();
+        showUserInformation();
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(MainUserActivity.this,mDrawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         mDrawerLayout.addDrawerListener(toggle);
@@ -67,9 +76,10 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
             }
         });
 
-        txt_nameUser.setOnClickListener(new View.OnClickListener() {
+        tv_nameUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(MainUserActivity.this,InformationActivity.class);
                 startActivity(intent);
             }
@@ -80,7 +90,7 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
     private void unitIU(){
         NavigationView navigationView = findViewById(R.id.navigation_view);
         mDrawerLayout = findViewById(R.id.drawer_layout);
-        txt_nameUser = navigationView.getHeaderView(0).findViewById(R.id.tv_nameUser);
+        tv_nameUser = navigationView.getHeaderView(0).findViewById(R.id.tv_nameUser);
         img_avatarUser =  navigationView.getHeaderView(0).findViewById(R.id.img_avatarUser);
     }
 
@@ -131,5 +141,24 @@ public class MainUserActivity extends AppCompatActivity implements NavigationVie
         }else{
             super.onBackPressed();
         }
+    }
+
+    //show email
+    private void showUserInformation(){
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
+        //set ten user cho menu
+        mDatabase.child("users").child(user.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                User user = snapshot.getValue(User.class);
+                tv_nameUser.setText(user.getName());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 }

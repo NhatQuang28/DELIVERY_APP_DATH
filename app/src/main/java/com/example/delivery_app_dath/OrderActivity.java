@@ -1,10 +1,10 @@
 package com.example.delivery_app_dath;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
-import android.os.Bundle;
 
 import com.example.delivery_app_dath.fragment.Adapter.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;

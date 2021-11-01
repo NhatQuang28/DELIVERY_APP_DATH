@@ -5,15 +5,17 @@ public class Vehicle {
     private String description;
     private String box;
     private String weight;
+    private int amountperkm;
 
     public Vehicle() {
     }
 
-    public Vehicle(String name, String description, String box, String weight) {
+    public Vehicle(String name, String description, String box, String weight, int amountperkm) {
         this.name = name;
         this.description = description;
         this.box = box;
         this.weight = weight;
+        this.amountperkm = amountperkm;
     }
 
     public String getName() {
@@ -46,5 +48,13 @@ public class Vehicle {
 
     public void setWeight(String weight) {
         this.weight = weight;
+    }
+
+    public int getAmountperkm() {
+        return amountperkm;
+    }
+
+    public void setAmountperkm(int amountperkm) {
+        this.amountperkm = amountperkm;
     }
 }

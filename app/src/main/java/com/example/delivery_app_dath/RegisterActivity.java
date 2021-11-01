@@ -35,15 +35,15 @@ public class RegisterActivity extends AppCompatActivity {
 
     private String urlFirebase = " https://dath-delivery-app-default-rtdb.asia-southeast1.firebasedatabase.app";
 
-    private void unitIU(){
-        imgv_backRegister =  findViewById(R.id.imgv_backRegister);
-        edt_phoneNumberRegister= findViewById(R.id.edt_phoneNumberRegister);
-        edt_emailRegister=findViewById(R.id.edt_emailRegister);
-        edt_passwordRegister= findViewById(R.id.edt_passwordRegister);
+    private void unitIU() {
+        imgv_backRegister = findViewById(R.id.imgv_backRegister);
+        edt_phoneNumberRegister = findViewById(R.id.edt_phoneNumberRegister);
+        edt_emailRegister = findViewById(R.id.edt_emailRegister);
+        edt_passwordRegister = findViewById(R.id.edt_passwordRegister);
         edt_verifyPasswordRegister = findViewById(R.id.edt_verifyPasswordRegister);
         edt_nameRegister = findViewById(R.id.edt_NameRegister);
-        btn_register=findViewById(R.id.btn_register);
-        txt_login=findViewById(R.id.txt_login);
+        btn_register = findViewById(R.id.btn_register);
+        txt_login = findViewById(R.id.txt_login);
         progressDialog = new ProgressDialog(this);
     }
 
@@ -73,7 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            RegisterUser();
+                RegisterUser();
             }
         });
     }
@@ -115,24 +115,21 @@ public class RegisterActivity extends AppCompatActivity {
             edt_emailRegister.requestFocus();
             return;
         }
-
         if (password.isEmpty()) {
             edt_passwordRegister.setError("Mật Khẩu Trống");
             edt_passwordRegister.requestFocus();
             return;
         }
-//        if (passwordVetify.isEmpty()) {
-//            edt_verifyPasswordRegister.setError("Xác thực mật khẩu trống");
-//            edt_verifyPasswordRegister.requestFocus();
-//        }else {
-//            if (!passwordVetify.equals(password)) {
-//                edt_verifyPasswordRegister.setError("Mật khẩu không khớp");
-//                edt_verifyPasswordRegister.requestFocus();
-//            } else {
-//                return;
-//            }
-//
-//        }
+        if (passwordVetify.isEmpty()) {
+            edt_verifyPasswordRegister.setError("Xác thực mật khẩu trống");
+            edt_verifyPasswordRegister.requestFocus();
+            return;
+        }
+        if (!passwordVetify.equals(password)) {
+            edt_verifyPasswordRegister.setError("Mật khẩu không khớp");
+            edt_verifyPasswordRegister.requestFocus();
+            return;
+        }
 
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         progressDialog.show();
@@ -142,7 +139,7 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             progressDialog.dismiss();
-                            User user = new User(name,phonenumber,email,password);
+                            User user = new User(name, phonenumber, email, password);
                             FirebaseDatabase database = FirebaseDatabase.getInstance(urlFirebase);
                             DatabaseReference myRef = database.getReference("users");
                             myRef.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user);
@@ -151,10 +148,13 @@ public class RegisterActivity extends AppCompatActivity {
                             finishAffinity();
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(RegisterActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "Đăng nhập thất bại",
+                                    Toast.LENGTH_LONG).show();
+                            progressDialog.dismiss();
                         }
                     }
                 });
-        }
     }
+
+
+}
