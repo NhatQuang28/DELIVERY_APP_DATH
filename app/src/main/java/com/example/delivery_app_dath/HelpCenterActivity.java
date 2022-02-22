@@ -15,3 +15,5 @@ public class HelpCenterActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 }
+
+//hello
